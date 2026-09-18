@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA — AI Career Intelligence</title>
+
+    <meta
+        name="description"
+        content="NEXORA is an AI-powered career intelligence platform that helps you discover, plan and build your future."
+    >
+
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/premium.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         LOADING SCREEN
+    ========================================== -->
+
+    <div class="loader" id="loader">
+        <div class="loader-core">
+            <span></span>
+        </div>
+
+        <div class="loader-text">
+            NEXORA
+        </div>
+
+        <div class="loader-status">
+            INITIALIZING CAREER INTELLIGENCE...
+        </div>
+    </div>
+
+
+    <!-- =========================================
+         CUSTOM CURSOR
+    ========================================== -->
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div class="background-system">
+
+        <div class="grid-background"></div>
+
+        <div class="noise"></div>
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+    </div>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="brand">
+
+            <div class="brand-symbol">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="brand-name">
+                NEXORA
+                <small>CAREER INTELLIGENCE</small>
+            </div>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#intelligence">Intelligence</a>
+            <a href="careers.html">Careers</a>
+            <a href="#how-it-works">How it works</a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a href="login.html" class="login-link">
+                Log in
+            </a>
+
+            <a href="signup.html" class="nav-cta">
+                Get Started
+                <span>↗</span>
+            </a>
+
+        </div>
+
+
+        <button class="mobile-menu" id="mobileMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="eyebrow reveal">
+
+                    <span class="status-dot"></span>
+
+                    AI CAREER INTELLIGENCE SYSTEM
+
+                    <span class="eyebrow-line"></span>
+
+                </div>
+
+
+                <h1 class="hero-title reveal">
+
+                    YOUR FUTURE
+                    <br>
+
+                    <span class="outline-text">IS NOT</span>
+
+                    <span class="lime-text">A GUESS.</span>
+
+                </h1>
+
+
+                <p class="hero-description reveal">
+
+                    NEXORA combines artificial intelligence, career data
+                    and personalized insights to help you understand
+                    where you are — and exactly where you can go next.
+
+                </p>
+
+
+                <div class="hero-actions reveal">
+
+                    <a href="signup.html" class="primary-button">
+
+                        <span>Build My Career Profile</span>
+
+                        <span class="button-arrow">↗</span>
+
+                    </a>
+
+
+                    <a href="#intelligence" class="secondary-button">
+
+                        Explore Intelligence
+
+                        <span>↓</span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-meta reveal">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>DISCOVER</span>
+                    </div>
+
+                    <div class="meta-line"></div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>ANALYZE</span>
+                    </div>
+
+                    <div class="meta-line"></div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>BUILD</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AI CORE VISUAL -->
+
+            <div class="hero-visual reveal">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit orbit-three"></div>
+
+
+                <div class="core-system">
+
+                    <div class="core-ring ring-outer"></div>
+                    <div class="core-ring ring-middle"></div>
+
+                    <a class="ai-core" href="chat.html" aria-label="Open NEXORA AI Chat">
+
+                        <div class="core-inner">
+
+                            <span class="core-pulse"></span>
+
+                            <span class="core-symbol">N</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-top">
+
+                    <span class="card-label">
+                        SYSTEM STATUS
+                    </span>
+
+                    <strong>
+                        ONLINE
+                    </strong>
+
+                    <span class="mini-indicator"></span>
+
+                </div>
+
+
+                <div class="floating-card card-bottom">
+
+                    <span class="card-label">
+                        CAREER SIGNAL
+                    </span>
+
+                    <strong>
+                        DETECTED
+                    </strong>
+
+                    <div class="signal-bars">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             MARQUEE
+        ========================================== -->
+
+        <section class="marquee-section">
+
+            <div class="marquee">
+
+                <div class="marquee-track">
+
+                    <span>DISCOVER YOUR DIRECTION</span>
+                    <b>✦</b>
+                    <span>MAP YOUR FUTURE</span>
+                    <b>✦</b>
+                    <span>BUILD YOUR SKILLS</span>
+                    <b>✦</b>
+                    <span>ASK YOUR AI</span>
+                    <b>✦</b>
+                    <span>DISCOVER YOUR DIRECTION</span>
+                    <b>✦</b>
+                    <span>MAP YOUR FUTURE</span>
+                    <b>✦</b>
+                    <span>BUILD YOUR SKILLS</span>
+                    <b>✦</b>
+                    <span>ASK YOUR AI</span>
+                    <b>✦</b>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             INTELLIGENCE SECTION
+        ========================================== -->
+
+        <section class="intelligence section" id="intelligence">
+
+            <div class="section-heading">
+
+                <div class="section-number">
+                    01 / INTELLIGENCE
+                </div>
+
+                <h2>
+                    KNOW YOUR
+                    <span>POSITION.</span>
+                </h2>
+
+                <p>
+                    Your career is more than a job title.
+                    NEXORA turns your interests, skills and ambitions
+                    into a living career intelligence profile.
+                </p>
+
+            </div>
+
+
+            <div class="intelligence-grid">
+
+                <div class="intel-card large-card">
+
+                    <div class="card-index">01</div>
+
+                    <div class="intel-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        AI CAREER
+                        <br>
+                        ANALYSIS
+                    </h3>
+
+                    <p>
+                        Understand your strengths, interests and
+                        potential career directions through
+                        intelligent analysis.
+                    </p>
+
+                    <a href="signup.html">
+                        Analyze my profile →
+                    </a>
+
+                    <div class="intel-metrics">
+                        <div>
+                            <strong>40+</strong>
+                            <span>CAREER PATHS</span>
+                        </div>
+                        <div>
+                            <strong>04</strong>
+                            <span>ROADMAP STAGES</span>
+                        </div>
+                        <div>
+                            <strong>24/7</strong>
+                            <span>AI SUPPORT</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="intel-card">
+
+                    <div class="card-index">02</div>
+
+                    <div class="intel-icon">
+                        ◎
+                    </div>
+
+                    <h3>
+                        SKILL
+                        <br>
+                        INTELLIGENCE
+                    </h3>
+
+                    <p>
+                        Discover the skills you already have
+                        and identify what you need next.
+                    </p>
+
+                </div>
+
+
+                <div class="intel-card">
+
+                    <div class="card-index">03</div>
+
+                    <div class="intel-icon">
+                        ↗
+                    </div>
+
+                    <h3>
+                        FUTURE
+                        <br>
+                        ROADMAP
+                    </h3>
+
+                    <p>
+                        Transform your career goal into
+                        a structured learning journey.
+                    </p>
+
+                </div>
+
+
+                <div class="intel-card">
+
+                    <div class="card-index">04</div>
+
+                    <div class="intel-icon">
+                        ◌
+                    </div>
+
+                    <h3>
+                        AI
+                        <br>
+                        CONVERSATION
+                    </h3>
+
+                    <p>
+                        Ask questions. Challenge ideas.
+                        Let your AI career partner guide you.
+                    </p>
+
+                    <a href="chat.html">
+                        Talk to NEXORA →
+                    </a>
+
+                </div>
+
+
+                <div class="intel-card signal-card">
+
+                    <div class="card-index">05</div>
+
+                    <div class="intel-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        CAREER
+                        <br>
+                        READINESS
+                    </h3>
+
+                    <p>
+                        Track your profile signal, skill momentum
+                        and next career move in one place.
+                    </p>
+
+                    <div class="signal-meter" aria-label="Career readiness signal">
+                        <div class="signal-meter-head">
+                            <span>PROFILE SIGNAL</span>
+                            <strong>ACTIVE</strong>
+                        </div>
+                        <div class="signal-meter-track">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CAREER SECTION
+        ========================================== -->
+
+        <section class="career-preview section" id="careers">
+
+            <div class="career-header">
+
+                <div>
+                    <div class="section-number">
+                        02 / CAREER EXPLORER
+                    </div>
+
+                    <h2>
+                        FIND WHERE
+                        <br>
+                        <span>YOU BELONG.</span>
+                    </h2>
+                </div>
+
+
+                <a href="careers.html" class="text-link">
+                    Explore careers ↗
+                </a>
+
+            </div>
+
+
+            <div class="career-grid">
+
+                <article class="career-card">
+
+                    <div class="career-top">
+                        <span>TECH / 01</span>
+                        <span>↗</span>
+                    </div>
+
+                    <div class="career-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Software
+                        <br>
+                        Engineering
+                    </h3>
+
+                    <div class="career-tags">
+                        <span>LOGIC</span>
+                        <span>BUILDING</span>
+                        <span>TECH</span>
+                    </div>
+
+                </article>
+
+
+                <article class="career-card featured">
+
+                    <div class="career-top">
+                        <span>CREATIVE / 02</span>
+                        <span>↗</span>
+                    </div>
+
+                    <div class="career-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Product &
+                        <br>
+                        UX Design
+                    </h3>
+
+                    <div class="career-tags">
+                        <span>DESIGN</span>
+                        <span>RESEARCH</span>
+                        <span>CREATIVE</span>
+                    </div>
+
+                </article>
+
+
+                <article class="career-card">
+
+                    <div class="career-top">
+                        <span>INTELLIGENCE / 03</span>
+                        <span>↗</span>
+                    </div>
+
+                    <div class="career-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Data &
+                        <br>
+                        AI
+                    </h3>
+
+                    <div class="career-tags">
+                        <span>DATA</span>
+                        <span>AI</span>
+                        <span>ANALYSIS</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             HOW IT WORKS
+        ========================================== -->
+
+        <section class="process section" id="how-it-works">
+
+            <div class="section-heading centered">
+
+                <div class="section-number">
+                    03 / THE NEXORA METHOD
+                </div>
+
+                <h2>
+                    FROM
+                    <span>UNCERTAINTY</span>
+                    TO
+                    <span>DIRECTION.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="process-line">
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        TELL US
+                        <br>
+                        ABOUT YOU
+                    </h3>
+
+                    <p>
+                        Share your education, interests,
+                        skills and ambitions.
+                    </p>
+
+                </div>
+
+
+                <div class="process-connector"></div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        LET AI
+                        <br>
+                        ANALYZE
+                    </h3>
+
+                    <p>
+                        Our intelligence engine turns
+                        your information into insights.
+                    </p>
+
+                </div>
+
+
+                <div class="process-connector"></div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        BUILD YOUR
+                        <br>
+                        ROADMAP
+                    </h3>
+
+                    <p>
+                        Receive a personalized path
+                        toward your chosen future.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+
+        <section class="final-cta">
+
+            <div class="cta-grid"></div>
+
+            <div class="cta-content">
+
+                <div class="section-number">
+                    NEXORA / 2026
+                </div>
+
+                <h2>
+                    READY TO DISCOVER
+                    <br>
+                    <span>WHAT'S NEXT?</span>
+                </h2>
+
+                <p>
+                    Your future deserves more than random advice.
+                </p>
+
+                <a href="signup.html" class="primary-button big-button">
+
+                    <span>Enter NEXORA</span>
+
+                    <span class="button-arrow">↗</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    <section class="premium-feature-band" id="intelligence"><div class="feature-copy"><div class="hero-chip">NEW · RESUME INTELLIGENCE</div><h2>Know what your resume is saying.</h2><p>Use NEXORA AI to find ATS issues, skill gaps, stronger truthful bullets and project ideas for your target role.</p><a class="primary-button" href="resume.html"><span>Analyze my resume</span><span class="button-arrow">↗</span></a></div><div class="feature-mini-grid"><div><b>01</b><span>Signal score</span></div><div><b>02</b><span>ATS fixes</span></div><div><b>03</b><span>Project gaps</span></div><div><b>04</b><span>Bullet rewrites</span></div></div></section></main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <div class="brand-symbol">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <strong>NEXORA</strong>
+
+        </div>
+
+
+        <p>
+            AI-powered career intelligence.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#intelligence">Intelligence</a>
+            <a href="careers.html">Careers</a>
+            <a href="login.html">Login</a>
+
+        </div>
+
+
+        <div class="footer-copy">
+            © 2026 NEXORA. ALL SYSTEMS OPERATIONAL.
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+
+<!-- NEXORA interaction layer -->
+<style>
+.marquee-track>a{color:inherit;text-decoration:none;cursor:pointer}
+.marquee-track>a:hover{text-decoration:underline;text-underline-offset:5px}
+.ai-core{cursor:pointer;text-decoration:none;color:inherit}
+.nx-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border:1px solid rgba(199,255,61,.35);border-radius:50%;background:rgba(5,6,5,.86);color:#c7ff3d;z-index:80;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+.nx-top.show{opacity:1;pointer-events:auto}
+.nx-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,12px);background:#0b0e0b;border:1px solid rgba(199,255,61,.25);color:#fff;padding:11px 15px;border-radius:10px;font:11px var(--mono);opacity:0;pointer-events:none;transition:.25s;z-index:90}
+.nx-toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+<button class="nx-top" id="nxTop" type="button" aria-label="Back to top">↑</button>
+<div class="nx-toast" id="nxToast" aria-live="polite"></div>
+<script>
+(function(){
+  const top=document.getElementById("nxTop"), toast=document.getElementById("nxToast");
+  if(!top) return;
+  function update(){top.classList.toggle("show",window.scrollY>500)}
+  window.addEventListener("scroll",update,{passive:true}); update();
+  top.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+  document.querySelectorAll(".marquee-track a").forEach(a=>{
+    a.addEventListener("click",()=>{toast.textContent="Opening "+a.textContent.trim();toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),900)})
+  });
+})();
+</script>
+</body>
+</html>

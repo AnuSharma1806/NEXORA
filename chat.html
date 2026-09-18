@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="theme-color" content="#050605"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXORA — AI Chat</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/premium.css"><link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="page-shell">
+<nav class="app-nav">
+<a class="app-brand" href="index.html"><span class="app-mark">N</span>NEXORA</a>
+<div class="app-nav-links open" id="nav"><a href="index.html">Home</a><a href="careers.html">Careers</a><a href="roadmap.html">Roadmap</a><a href="resume.html">Resume AI</a><a class="active" href="chat.html">AI Chat</a></div>
+<div class="app-nav-actions"><a class="btn" href="dashboard.html">Dashboard</a><button class="mobile-toggle" type="button" onclick="document.getElementById('nav').classList.toggle('open')">☰</button></div>
+</nav>
+<main class="app-main" style="padding-top:22px">
+<div class="chat-shell">
+<aside class="panel chat-sidebar">
+  <div class="page-kicker">NEXORA AI</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:10px"><h3 style="margin:0">Conversations</h3><span id="aiBadge" class="ai-badge">● OPENAI READY</span></div>
+  <div class="chat-history">
+    <button data-prompt="Help me choose between Data Analyst and Data Scientist.">Career direction</button>
+    <button data-prompt="What skills should I learn for my target career?">Skills to learn</button>
+    <button data-prompt="Give me 5 portfolio project ideas for my career.">Portfolio ideas</button>
+    <button data-prompt="Start a mock interview with me.">Interview prep</button>
+    <button data-prompt="Teach me a topic from beginner level with examples and a small practice task.">Study with AI</button>
+  </div>
+  <a class="btn" href="careers.html">Browse careers</a>
+  <button class="btn" id="newChatBtn" type="button">＋ New chat</button>
+  <button class="btn" id="exportChatBtn" type="button">↓ Export chat</button>
+  <button class="btn btn-danger" id="clearChatBtn" type="button">Clear conversation</button>
+</aside>
+<section class="panel chat-window">
+  <div class="chat-head">
+    <div><strong>NEXORA AI Chat <span style="font-size:10px;opacity:.65">SUMMIT BUILD 0919</span></strong><div class="muted" style="font-size:12px;margin-top:4px">OpenAI-powered · natural conversation · text + voice · multilingual</div></div>
+    <span class="ai-badge desktop-badge" id="aiBadgeTop">GPT-5.6 · LIVE</span>
+  </div>
+  <div class="messages" id="messages"></div>
+  <div class="quick-prompts">
+    <button type="button">Suggest a career for me</button><button type="button">Build a 90-day roadmap</button><button type="button">Review my resume</button><button type="button">Give me interview questions</button><button type="button">Teach me something</button>
+  </div>
+  <div class="voice-tools">
+    <div><label for="languageSelect">Language</label><select class="input" id="languageSelect"><option value="auto">Auto detect</option><option value="en-US">English</option><option value="hi-IN">Hindi</option><option value="bn-IN">Bengali</option><option value="ta-IN">Tamil</option><option value="te-IN">Telugu</option><option value="mr-IN">Marathi</option><option value="gu-IN">Gujarati</option><option value="kn-IN">Kannada</option><option value="ml-IN">Malayalam</option><option value="pa-IN">Punjabi</option><option value="ur-IN">Urdu</option><option value="es-ES">Spanish</option><option value="fr-FR">French</option><option value="de-DE">German</option><option value="ja-JP">Japanese</option><option value="ko-KR">Korean</option><option value="zh-CN">Chinese</option><option value="ar-SA">Arabic</option><option value="pt-BR">Portuguese</option><option value="ru-RU">Russian</option></select></div>
+    <div><label for="voiceSelect">AI voice</label><select class="input" id="voiceSelect"></select></div>
+    <button class="btn" id="previewVoiceBtn" type="button">▶ Preview</button>
+    <button class="btn" id="micBtn" type="button">🎙 Voice</button>
+    <button class="btn" id="stopVoiceBtn" type="button" hidden>■ Stop</button>
+    <button class="btn" id="speakBtn" type="button">🔊 Speak</button>
+    <button class="btn" id="stopSpeakBtn" type="button">■ Stop audio</button>
+    <label class="voice-toggle"><input id="autoSpeak" type="checkbox"> Auto speak</label>
+  </div>
+  <form class="chat-input" id="chatForm"><input class="input" id="chatInput" autocomplete="off" placeholder="Talk naturally — careers, study, coding, ideas, anything..." required><button class="btn btn-primary" type="submit">Send ↗</button></form>
+  <div class="muted chat-status" id="chatStatus">Ready. Start NEXORA with the included server + API key for real OpenAI mode.</div>
+</section>
+</div>
+</main>
+</div>
+<script src="js/chat.js?v=summit-0919"></script>
+<script>
+window.addEventListener("error", function(e){ console.error("NEXORA:", e.error || e.message); });
+// Keep the top badge in sync without observing attributes (which can cause an infinite MutationObserver loop).
+window.syncNexoraBadges = function(){
+  const src=document.getElementById("aiBadge");
+  const top=document.getElementById("aiBadgeTop");
+  if(!src || !top) return;
+  top.textContent=src.textContent;
+  top.classList.toggle("live", src.classList.contains("live"));
+};
+</script>
+</body>
+</html>

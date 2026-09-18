@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="theme-color" content="#050605"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXORA — Career Study</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/premium.css"><link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="page-shell">
+<nav class="app-nav">
+<a class="app-brand" href="index.html"><span class="app-mark">N</span>NEXORA</a>
+<div class="app-nav-links open" id="nav"><a href="index.html">Home</a><a class="active" href="careers.html">Careers</a><a href="roadmap.html">Roadmap</a><a href="resume.html">Resume AI</a><a href="chat.html">AI Chat</a></div>
+<div class="app-nav-actions"><a class="btn" href="careers.html">← Careers</a><button class="mobile-toggle" type="button" onclick="document.getElementById('nav').classList.toggle('open')">☰</button></div>
+</nav>
+<main class="app-main">
+<div class="hero-chip">NEXORA LEARNING LAB · CAREER STUDY</div>
+<div class="study-hero section-gap">
+<section class="panel">
+<div class="page-kicker">Study path</div>
+<h1 class="page-title" id="studyTitle">Career Study</h1>
+<p class="page-subtitle" id="studyIntro">Learn the foundations, tools, projects and interview skills for your target career — step by step.</p>
+<div class="study-progress"><i id="studyProgress"></i></div>
+<p class="muted" id="progressText" style="margin-top:9px;font-size:12px">0% complete</p>
+</section>
+<section class="panel">
+<div class="study-stat-grid">
+<div class="study-stat"><strong id="moduleCount">06</strong><span>LEARNING MODULES</span></div>
+<div class="study-stat"><strong id="skillCount">04</strong><span>CORE SKILLS</span></div>
+<div class="study-stat"><strong>02+</strong><span>PRACTICAL PROJECTS</span></div>
+<div class="study-stat"><strong>24/7</strong><span>AI TUTOR</span></div>
+</div>
+</section>
+</div>
+
+<section class="study-modules section-gap" id="modules"></section>
+
+<section class="panel section-gap">
+<div class="tutor-box">
+<div><div class="page-kicker">AI tutor</div><h2 style="margin:0 0 7px">Stuck on a concept?</h2><p class="muted" style="margin:0">Ask NEXORA to explain it simply, give examples, create practice questions, or teach it in your language.</p></div>
+<a class="btn btn-primary" id="tutorLink" href="chat.html">Ask AI Tutor ↗</a>
+</div>
+</section>
+
+<section class="panel section-gap" id="quizBox">
+<div class="page-kicker">Quick check</div><h2 style="margin:0 0 7px">Test what you learned</h2>
+<p id="quizQuestion" style="line-height:1.6"></p><div id="quizOptions"></div><p id="quizResult" class="muted" style="margin-bottom:0"></p>
+</section>
+</main>
+</div>
+<script src="js/study.js"></script>
+</body></html>
